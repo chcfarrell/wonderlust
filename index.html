@@ -36,10 +36,10 @@
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
                     <img 
-                        src="majorca-beach-square-s.jpg"
-                        srcset="majorca-beach-square-s.jpg 400w,
-                            majorca-beach-vertical-m.jpg 800w,
-                            majorca-beach-horizontal-l.jpg 1200w"
+                        src="images/majorca-beach-square-s.jpg"
+                        srcset="images/majorca-beach-square-s.jpg 400w,
+                            images/majorca-beach-vertical-m.jpg 800w,
+                            images/majorca-beach-horizontal-l.jpg 1200w"
                         sizes="(max-width: 404px) 400px, (max-width: 920px) 800px, 1280px"
                         alt="Majorca Beach"
                     >
@@ -219,34 +219,34 @@
             Contact Us <span id="required">(*required)</span>
             
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="fname">First Name<span>*</span></label>
+                    <input type="text" id="fname" name="fname">
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lname">Last Name<span>*</span></label>
+                    <input type="text" id="lname" name="lname">
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email">
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input type="tel" id="phone" name="phone">
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" id="email-choice" name="contact-method" value="Email">
+                        <label for="email-choice">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="text-choice" name="contact-method" value="Text">
+                        <label for="text-choice">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="phone-choice" name="contact-method" value="Phone">
+                        <label for="phone-choice">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
@@ -275,7 +275,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" value="Submit">
             
         </section>
         <section id="legal">
