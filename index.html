@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main">Skip to Main Content</a>
     <header>
         <h1>Destination Majorca</h1>
         <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
@@ -27,21 +28,18 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <article>
             <h2>Majorca</h2>
             <section id="intro">
                 <h3>Introduction</h3>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
-                    <img 
-                        src="images/majorca-beach-square-s.jpg"
-                        srcset="images/majorca-beach-square-s.jpg 404w,
-                            images/majorca-beach-vertical-m.jpg 920w,
-                            images/majorca-beach-horizontal-l.jpg 1280w"
-                        sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px"
-                        alt="Majorca Beach"
-                    >
+                    <picture>
+                        <source media="(max-width: 404px)" srcset="images/majorca-beach-square-s.jpg">
+                        <source media="(max-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
+                        <img src="images/majorca-beach-horizontal-l.jpg" alt="Majorca Beach">
+                    </picture>
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
@@ -223,7 +221,7 @@
     <footer>
         <section id="contact-us">
             <h3>Contact Us</h3> <span id="required">(*required)</span>
-            
+            <form>
                 <div>
                     <label for="fname">First Name<span>*</span></label>
                     <input type="text" id="fname" name="fname">
@@ -282,6 +280,7 @@
                     </select>
                 </fieldset>
                 <input type="submit" value="Submit">
+            </form>
             
         </section>
         <section id="legal">
